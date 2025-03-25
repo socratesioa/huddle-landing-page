@@ -1,0 +1,211 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: white;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+a {
+  color: white;
+  border: 1px solid white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  color: var(--soft-magenta);
+  border: 2px solid var(--soft-magenta);
+}
+
+svg {
+  scale: 0.7;
+}
+
+.btn {
+  border: none;
+  text-decoration: none;
+  color: var(--violet);
+  background-color: white;
+  border-radius: 20px;
+  height: 40px;
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  box-shadow: 1px 3px 5px 0 hsla(0, 0, 0, 0.269);
+  transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+  border: none;
+  background-color: var(--soft-magenta);
+  color: white;
+}
+
+.cta {
+  margin-top: 60px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.wrapper {
+  background-color: var(--violet);
+  min-height: 100vh;
+  padding: 38px 0 40px;
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header {
+  padding: 0 20px;
+}
+
+.logo {
+  display: block;
+  width: 120px;
+  height: 19px;
+}
+
+main {
+  padding: 0 35px;
+  margin-top: 70px;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  gap: 11px;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    padding: 64px 80px 40px;
+    background-image: url("./images/bg-desktop.svg");
+    background-size: cover;
+  }
+
+  .logo {
+    display: block;
+    width: 200px;
+    height: 32px;
+    margin-left: -60px;
+  }
+
+  header {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto minmax(auto, 520px);
+    gap: 60px;
+    padding: 0;
+    margin-top: 104px;
+    margin-bottom: 27px;
+  }
+
+  .cta {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    text-align: left;
+  }
+
+  footer {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .hero {
+    max-width: 696px;
+    width: 100%;
+  }
+
+  .hero-img {
+    max-width: 696px;
+    width: 100%;
+  }
+
+  .social {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  a {
+    height: 40px;
+    width: 40px;
+  }
+
+  svg {
+    scale: 1;
+  }
+
+  .btn {
+    border-radius: 28px;
+    height: 56px;
+    width: 200px;
+    font-size: 18px;
+    line-height: 27px;
+    box-shadow: 2px 4px 9px 3px hsla(0, 0, 0, 0.2586);
+  }
+}
